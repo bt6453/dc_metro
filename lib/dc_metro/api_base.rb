@@ -20,6 +20,7 @@ module DcMetro
             req.params                 = camel_params(params)
           end
         end
+        # TODO Mkae a Response model instead
         OpenStruct.new(response.body)
       end
 

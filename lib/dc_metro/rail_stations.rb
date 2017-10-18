@@ -1,7 +1,8 @@
 module DcMetro
   class RailStations < ApiBase
     RAIL_STATIONS_PATH = "Rail.svc/json"
-
+    # TODO Use a response model
+    # TODO Add tests
     class << self
       def lines
         get "#{RAIL_STATIONS_PATH}/jLines"
